@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#hasAtomicNumber -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#hasAtomicNumber"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#hasElement -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#hasElement"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#hasName -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#hasName"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#hasSymbol -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#hasSymbol"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#participatesIn -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#participatesIn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/User/chemistry.owl#hasElement -->
+
+    <ObjectProperty rdf:about="file:/C:/Users/User/chemistry.owl#hasElement">
+        <rdfs:domain rdf:resource="file:/C:/Users/User/chemistry.owl#Compound"/>
+        <rdfs:range rdf:resource="file:/C:/Users/User/chemistry.owl#Element"/>
+    </ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/User/chemistry.owl#participatesIn -->
+
+    <ObjectProperty rdf:about="file:/C:/Users/User/chemistry.owl#participatesIn">
+        <rdfs:domain rdf:resource="file:/C:/Users/User/chemistry.owl#Atom"/>
+        <rdfs:range rdf:resource="file:/C:/Users/User/chemistry.owl#ChemicalReaction"/>
+    </ObjectProperty>
+    
+
+
+    <!-- file:/C:/Users/User/chemistry.owl#reactsWith -->
+
+    <ObjectProperty rdf:about="file:/C:/Users/User/chemistry.owl#reactsWith">
+        <rdfs:domain rdf:resource="file:/C:/Users/User/chemistry.owl#Element"/>
+        <rdfs:range rdf:resource="file:/C:/Users/User/chemistry.owl#Element"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/User/chemistry.owl#hasAtomicNumber -->
+
+    <DatatypeProperty rdf:about="file:/C:/Users/User/chemistry.owl#hasAtomicNumber">
+        <rdfs:domain rdf:resource="file:/C:/Users/User/chemistry.owl#Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/User/chemistry.owl#hasName -->
+
+    <DatatypeProperty rdf:about="file:/C:/Users/User/chemistry.owl#hasName">
+        <rdfs:domain rdf:resource="file:/C:/Users/User/chemistry.owl#Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/User/chemistry.owl#hasSymbol -->
+
+    <DatatypeProperty rdf:about="file:/C:/Users/User/chemistry.owl#hasSymbol">
+        <rdfs:domain rdf:resource="file:/C:/Users/User/chemistry.owl#Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/User/chemistry.owl#Atom -->
+
+    <Class rdf:about="file:/C:/Users/User/chemistry.owl#Atom"/>
+    
+
+
+    <!-- file:/C:/Users/User/chemistry.owl#ChemicalReaction -->
+
+    <Class rdf:about="file:/C:/Users/User/chemistry.owl#ChemicalReaction"/>
+    
+
+
+    <!-- file:/C:/Users/User/chemistry.owl#Compound -->
+
+    <Class rdf:about="file:/C:/Users/User/chemistry.owl#Compound"/>
+    
+
+
+    <!-- file:/C:/Users/User/chemistry.owl#Element -->
+
+    <Class rdf:about="file:/C:/Users/User/chemistry.owl#Element"/>
+    
+
+
+    <!-- file:/C:/Users/User/chemistry.owl#Hydrogen -->
+
+    <Class rdf:about="file:/C:/Users/User/chemistry.owl#Hydrogen">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/User/chemistry.owl#Element"/>
+    </Class>
+    
+
+
+    <!-- file:/C:/Users/User/chemistry.owl#Oxygen -->
+
+    <Class rdf:about="file:/C:/Users/User/chemistry.owl#Oxygen">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/User/chemistry.owl#Element"/>
+    </Class>
+    
+
+
+    <!-- file:/C:/Users/User/chemistry.owl#Water -->
+
+    <Class rdf:about="file:/C:/Users/User/chemistry.owl#Water">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/User/chemistry.owl#Compound"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Hydrogen -->
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Hydrogen"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Oxygen -->
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Oxygen"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Water -->
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Water"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/User/chemistry.owl#Hydrogen -->
+
+    <NamedIndividual rdf:about="file:/C:/Users/User/chemistry.owl#Hydrogen">
+        <rdf:type rdf:resource="file:/C:/Users/User/chemistry.owl#Element"/>
+    </NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/User/chemistry.owl#Oxygen -->
+
+    <NamedIndividual rdf:about="file:/C:/Users/User/chemistry.owl#Oxygen">
+        <rdf:type rdf:resource="file:/C:/Users/User/chemistry.owl#Element"/>
+    </NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/User/chemistry.owl#Water -->
+
+    <NamedIndividual rdf:about="file:/C:/Users/User/chemistry.owl#Water">
+        <rdf:type rdf:resource="file:/C:/Users/User/chemistry.owl#Compound"/>
+    </NamedIndividual>
+    
+
+
+    <!-- file:/C:/Users/User/chemistry.owl#WaterFormation -->
+
+    <NamedIndividual rdf:about="file:/C:/Users/User/chemistry.owl#WaterFormation">
+        <rdf:type rdf:resource="file:/C:/Users/User/chemistry.owl#ChemicalReaction"/>
+        <participatesIn rdf:resource="file:/C:/Users/User/chemistry.owl#Hydrogen"/>
+        <participatesIn rdf:resource="file:/C:/Users/User/chemistry.owl#Oxygen"/>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="file:/C:/Users/User/chemistry.owl#Hydrogen">
+        <hasAtomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasAtomicNumber>
+        <hasSymbol>H</hasSymbol>
+        <hasName>Hydrogen</hasName>
+    </rdf:Description>
+    <rdf:Description rdf:about="file:/C:/Users/User/chemistry.owl#Oxygen">
+        <hasSymbol>O</hasSymbol>
+        <hasAtomicNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</hasAtomicNumber>
+        <hasName>Oxygen</hasName>
+    </rdf:Description>
+    <rdf:Description rdf:about="file:/C:/Users/User/chemistry.owl#Water">
+        <hasElement rdf:resource="file:/C:/Users/User/chemistry.owl#Oxygen"/>
+        <hasElement rdf:resource="file:/C:/Users/User/chemistry.owl#Hydrogen"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
